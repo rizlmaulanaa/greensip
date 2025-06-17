@@ -1,24 +1,563 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>glowskin-landing-page-magic</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="glowskin-landing-page-magic" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>GlowSkin Naturals - Kulit Glowing Alami Dalam 7 Hari!</title>
+    <meta name="description" content="GlowSkin Serum - Produk skincare alami untuk kulit glowing dalam 7 hari. 100% bahan alami, dermatologically tested." />
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#home">
+          <i class="fas fa-leaf me-2"></i>GlowSkin Naturals
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#masalah">Masalah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solusi">Solusi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimoni">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#before-after">Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#harga">Harga</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
+            <h1 class="display-4 fw-bold text-dark mb-3">
+              Kulit <span class="text-primary">Glowing Alami</span><br>
+              Dalam 7 Hari!
+            </h1>
+            <p class="lead text-muted mb-4">
+              Rasakan transformasi kulit dengan GlowSkin Serum - formula revolusioner dari bahan alami pilihan yang telah terbukti memberikan hasil luar biasa.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#harga" class="btn btn-primary btn-lg px-4 py-3 rounded-pill">
+                <i class="fas fa-shopping-cart me-2"></i>Coba Sekarang
+              </a>
+              <a href="https://wa.me/628123456789?text=Halo, saya tertarik dengan GlowSkin Serum" 
+                 class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill" target="_blank">
+                <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+              </a>
+            </div>
+            <div class="mt-4">
+              <small class="text-muted">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                4.9/5 dari 1000+ pelanggan
+              </small>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1 text-center" data-aos="fade-left">
+            <div class="hero-image-container">
+              <img src="https://images.unsplash.com/photo-1556228578-dd7c9fdf52d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                   alt="GlowSkin Serum" class="img-fluid hero-product-image">
+              <div class="floating-badge">
+                <i class="fas fa-leaf text-success"></i>
+                <span>100% Natural</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Masalah Section -->
+    <section id="masalah" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold mb-3">Apakah Kulit Anda Mengalami Masalah Ini?</h2>
+            <p class="text-muted">Jutaan wanita Indonesia menghadapi masalah kulit yang sama setiap hari</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="problem-card text-center p-4 h-100">
+              <div class="problem-icon mb-3">
+                <i class="fas fa-frown text-danger"></i>
+              </div>
+              <h5 class="fw-semibold mb-3">Kulit Kusam & Tidak Bercahaya</h5>
+              <p class="text-muted">Kulit terlihat lelah, tidak fresh, dan kehilangan kilau alaminya</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="problem-card text-center p-4 h-100">
+              <div class="problem-icon mb-3">
+                <i class="fas fa-exclamation-triangle text-warning"></i>
+              </div>
+              <h5 class="fw-semibold mb-3">Jerawat & Komedo</h5>
+              <p class="text-muted">Breakout yang mengganggu kepercayaan diri dan sulit diatasi</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="problem-card text-center p-4 h-100">
+              <div class="problem-icon mb-3">
+                <i class="fas fa-circle text-dark"></i>
+              </div>
+              <h5 class="fw-semibold mb-3">Bekas Luka & Dark Spot</h5>
+              <p class="text-muted">Noda hitam dan bekas jerawat yang membandel dan sulit hilang</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solusi Section -->
+    <section id="solusi" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1594824204098-7add17cd8c98?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Natural Ingredients" class="img-fluid rounded-4 shadow">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="fw-bold mb-4">Solusi Terbaik untuk Kulit Sempurna</h2>
+            <p class="text-muted mb-4">
+              GlowSkin Serum diformulasikan khusus dengan teknologi terdepan dan bahan-bahan alami pilihan 
+              untuk memberikan solusi menyeluruh bagi masalah kulit Anda.
+            </p>
+            <div class="feature-list">
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon me-3">
+                  <i class="fas fa-leaf text-success"></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">100% Bahan Alami</h6>
+                  <small class="text-muted">Vitamin C, Niacinamide, Hyaluronic Acid dari ekstrak tumbuhan</small>
+                </div>
+              </div>
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon me-3">
+                  <i class="fas fa-microscope text-primary"></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Dermatologically Tested</h6>
+                  <small class="text-muted">Telah teruji klinis dan aman untuk semua jenis kulit</small>
+                </div>
+              </div>
+              <div class="feature-item d-flex align-items-center mb-3">
+                <div class="feature-icon me-3">
+                  <i class="fas fa-clock text-info"></i>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Hasil Dalam 7 Hari</h6>
+                  <small class="text-muted">Formula cepat serap dengan hasil yang terlihat nyata</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold mb-3">Apa Kata Mereka?</h2>
+            <p class="text-muted">Ribuan pelanggan telah merasakan manfaat luar biasa GlowSkin Serum</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card p-4 h-100">
+              <div class="stars mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p class="mb-4">"Baru 5 hari pakai, kulit sudah terasa lebih halus dan glowing! Jerawat juga mulai mengering. Recommended banget!"</p>
+              <div class="customer-info d-flex align-items-center">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                     alt="Sarah" class="customer-photo me-3">
+                <div>
+                  <h6 class="fw-semibold mb-0">Sarah Putri</h6>
+                  <small class="text-muted">Jakarta</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card p-4 h-100">
+              <div class="stars mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p class="mb-4">"Setelah coba berbagai produk, akhirnya ketemu yang cocok! Dark spot di wajah sudah mulai memudar. Thank you GlowSkin!"</p>
+              <div class="customer-info d-flex align-items-center">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                     alt="Maya" class="customer-photo me-3">
+                <div>
+                  <h6 class="fw-semibold mb-0">Maya Sari</h6>
+                  <small class="text-muted">Bandung</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card p-4 h-100">
+              <div class="stars mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p class="mb-4">"Kulitku yang sensitif cocok banget sama produk ini. Ga ada iritasi dan hasilnya amazing! Wajah jadi cerah natural."</p>
+              <div class="customer-info d-flex align-items-center">
+                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                     alt="Dina" class="customer-photo me-3">
+                <div>
+                  <h6 class="fw-semibold mb-0">Dina Amalia</h6>
+                  <small class="text-muted">Surabaya</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before After Section -->
+    <section id="before-after" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold mb-3">Transformasi Nyata dalam 7 Hari</h2>
+            <p class="text-muted">Lihat perubahan luar biasa yang dialami pelanggan kami</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="before-after-card">
+              <div class="comparison-container">
+                <div class="before-after-images">
+                  <div class="before-image">
+                    <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="Before" class="img-fluid">
+                    <div class="label">SEBELUM</div>
+                  </div>
+                  <div class="after-image">
+                    <img src="https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="After" class="img-fluid">
+                    <div class="label">SESUDAH</div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-info text-center mt-3">
+                <h6 class="fw-semibold">Rina - 24 tahun</h6>
+                <p class="text-muted small">Masalah: Jerawat & kulit kusam</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="before-after-card">
+              <div class="comparison-container">
+                <div class="before-after-images">
+                  <div class="before-image">
+                    <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="Before" class="img-fluid">
+                    <div class="label">SEBELUM</div>
+                  </div>
+                  <div class="after-image">
+                    <img src="https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                         alt="After" class="img-fluid">
+                    <div class="label">SESUDAH</div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-info text-center mt-3">
+                <h6 class="fw-semibold">Lisa - 28 tahun</h6>
+                <p class="text-muted small">Masalah: Dark spot & bekas jerawat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Harga Section -->
+    <section id="harga" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold mb-3">Investasi Terbaik untuk Kulit Sempurna</h2>
+            <p class="text-muted">Promo terbatas! Dapatkan harga spesial sekarang juga</p>
+          </div>
+        </div>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card text-center p-4">
+              <div class="package-badge">MOST POPULAR</div>
+              <h5 class="fw-bold mb-3">Paket 1 Botol</h5>
+              <div class="price-container mb-4">
+                <span class="old-price">Rp 299.000</span>
+                <div class="current-price">Rp 199.000</div>
+                <div class="discount-badge">HEMAT 33%</div>
+              </div>
+              <ul class="package-features">
+                <li><i class="fas fa-check text-success me-2"></i>1x GlowSkin Serum (30ml)</li>
+                <li><i class="fas fa-check text-success me-2"></i>Panduan penggunaan</li>
+                <li><i class="fas fa-check text-success me-2"></i>Garansi uang kembali</li>
+                <li><i class="fas fa-check text-success me-2"></i>Free konsultasi</li>
+              </ul>
+              <a href="https://wa.me/628123456789?text=Halo, saya ingin memesan Paket 1 Botol GlowSkin Serum (Rp 199.000)" 
+                 class="btn btn-primary w-100 mt-3" target="_blank">
+                <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card text-center p-4">
+              <div class="package-badge best-value">BEST VALUE</div>
+              <h5 class="fw-bold mb-3">Paket 3 Botol</h5>
+              <div class="price-container mb-4">
+                <span class="old-price">Rp 897.000</span>
+                <div class="current-price">Rp 499.000</div>
+                <div class="discount-badge">HEMAT 44%</div>
+              </div>
+              <ul class="package-features">
+                <li><i class="fas fa-check text-success me-2"></i>3x GlowSkin Serum (30ml)</li>
+                <li><i class="fas fa-check text-success me-2"></i>Panduan penggunaan</li>
+                <li><i class="fas fa-check text-success me-2"></i>Garansi uang kembali</li>
+                <li><i class="fas fa-check text-success me-2"></i>Free konsultasi selamanya</li>
+                <li><i class="fas fa-check text-success me-2"></i>Free ongkir seluruh Indonesia</li>
+              </ul>
+              <a href="https://wa.me/628123456789?text=Halo, saya ingin memesan Paket 3 Botol GlowSkin Serum (Rp 499.000)" 
+                 class="btn btn-primary w-100 mt-3" target="_blank">
+                <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <div class="timer-container">
+              <h6 class="fw-semibold text-danger mb-2">⏰ Promo berakhir dalam:</h6>
+              <div id="countdown" class="countdown-timer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ & Kontak Section -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold mb-3">Pertanyaan yang Sering Diajukan</h2>
+            <p class="text-muted">Temukan jawaban untuk pertanyaan Anda tentang GlowSkin Serum</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto" data-aos="fade-up">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Apakah GlowSkin Serum aman untuk semua jenis kulit?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Ya, GlowSkin Serum telah teruji dermatologi dan aman untuk semua jenis kulit, termasuk kulit sensitif. Formula alami kami tidak mengandung bahan kimia berbahaya.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Berapa lama hasil mulai terlihat?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Hasil dapat mulai terlihat dalam 3-7 hari pemakaian rutin. Untuk hasil optimal, gunakan secara teratur selama 4-6 minggu.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Bagaimana cara penggunaan yang benar?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Gunakan 2-3 tetes serum pada wajah yang telah dibersihkan, pagi dan malam. Tepuk-tepuk lembut hingga meresap sempurna, lalu lanjutkan dengan moisturizer.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                    Apakah ada garansi jika tidak cocok?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Ya, kami memberikan garansi uang kembali 100% dalam 30 hari jika produk tidak sesuai dengan ekspektasi Anda.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                    Bagaimana cara pemesanan dan pengiriman?
+                  </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Pemesanan mudah melalui WhatsApp. Kami melayani pengiriman ke seluruh Indonesia dengan berbagai pilihan ekspedisi. Barang dikirim dalam 1-2 hari kerja.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="row mt-5">
+          <div class="col-lg-8 mx-auto" data-aos="fade-up">
+            <div class="contact-section text-center">
+              <h4 class="fw-bold mb-4">Masih Ada Pertanyaan?</h4>
+              <p class="text-muted mb-4">Tim customer service kami siap membantu Anda 24/7</p>
+              <div class="contact-options d-flex justify-content-center gap-4 flex-wrap">
+                <a href="https://wa.me/628123456789?text=Halo, saya ingin konsultasi tentang GlowSkin Serum" 
+                   class="btn btn-success btn-lg" target="_blank">
+                  <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                </a>
+                <a href="mailto:info@glowskinnaturals.com" class="btn btn-outline-primary btn-lg">
+                  <i class="fas fa-envelope me-2"></i>Email Kami
+                </a>
+              </div>
+              <div class="mt-4">
+                <p class="small text-muted">
+                  <i class="fas fa-phone me-2"></i>+62 812-3456-789<br>
+                  <i class="fas fa-envelope me-2"></i>info@glowskinnaturals.com<br>
+                  <i class="fas fa-clock me-2"></i>Customer Service: 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps -->
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up">
+            <div class="map-container">
+              <h5 class="fw-bold text-center mb-4">Lokasi Kantor Kami</h5>
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666!2d106.845!3d-6.208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMjguOCJTIDEwNsKwNTAnNDIuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              <div class="text-center mt-3">
+                <p class="text-muted">
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  Jl. Sudirman No. 123, Jakarta Pusat 10220, Indonesia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h6 class="fw-bold mb-2">
+              <i class="fas fa-leaf me-2"></i>GlowSkin Naturals
+            </h6>
+            <p class="small mb-0">Kecantikan alami untuk kulit yang sehat dan bercahaya</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="small mt-2 mb-0">© 2024 GlowSkin Naturals. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+      <a href="https://wa.me/628123456789?text=Halo, saya tertarik dengan GlowSkin Serum" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
   </body>
 </html>
