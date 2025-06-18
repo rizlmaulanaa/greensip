@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlowSkin Naturals - Revolusi Skincare Alami</title>
-    <meta name="description" content="Dapatkan kulit glowing impian dengan GlowSkin Serum - formula revolusioner 100% alami yang memberikan hasil nyata dalam 7 hari">
+    <title>GreenSip - Teh Organik Segar & Sehat</title>
     
-    <!-- Bootstrap 5.3 -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,222 +21,170 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Floating Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand brand-text" href="#home">
-                ✨ GlowSkin Naturals
+            <a class="navbar-brand fw-bold text-success" href="#home">
+                <i class="fas fa-leaf me-2"></i>GreenSip
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#problems">Masalah</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#solution">Solusi</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#testimonials">Testimoni</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#results">Hasil</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#pricing">Harga</a></li>
-                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Kontak</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient min-vh-100 d-flex align-items-center position-relative overflow-hidden">
-        <div class="floating-elements">
-            <div class="floating-circle circle-1"></div>
-            <div class="floating-circle circle-2"></div>
-            <div class="floating-circle circle-3"></div>
-        </div>
-        
-        <div class="container position-relative">
+    <section id="home" class="hero-section">
+        <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
-                    <div class="hero-badge mb-4">
-                        <i class="fas fa-star text-warning me-2"></i>
-                        #1 Skincare Alami Indonesia
-                    </div>
-                    <h1 class="hero-title mb-4">
-                        Revolusi <span class="gradient-text">Skincare Alami</span><br>
-                        untuk Kulit Impian Anda
-                    </h1>
-                    <p class="hero-subtitle mb-4">
-                        Rasakan transformasi luar biasa dengan GlowSkin Serum - formula revolusioner yang menggabungkan 
-                        kearifan alam dengan teknologi modern untuk memberikan hasil nyata dalam 7 hari.
-                    </p>
-                    <div class="hero-stats mb-4">
-                        <div class="row g-3">
-                            <div class="col-4">
-                                <div class="stat-item">
-                                    <div class="stat-number">10K+</div>
-                                    <div class="stat-label">Pelanggan Puas</div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="stat-item">
-                                    <div class="stat-number">7</div>
-                                    <div class="stat-label">Hari Hasil</div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="stat-item">
-                                    <div class="stat-number">100%</div>
-                                    <div class="stat-label">Alami</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-actions d-flex flex-wrap gap-3">
-                        <a href="#pricing" class="btn btn-hero-primary btn-lg px-5 smooth-scroll">
-                            <i class="fas fa-rocket me-2"></i>Mulai Transformasi
-                        </a>
-                        <a href="https://wa.me/628123456789?text=Halo, saya tertarik dengan GlowSkin Serum" 
-                           class="btn btn-hero-outline btn-lg px-5" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i>Chat Sekarang
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-2 order-1 text-center" data-aos="fade-left">
-                    <div class="hero-product-showcase">
-                        <div class="product-glow"></div>
-                        <img src="https://images.unsplash.com/photo-1556228578-dd7c9fdf52d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="GlowSkin Serum" class="hero-product-img">
-                        <div class="floating-testimonial">
-                            <div class="mini-testimonial">
-                                <div class="stars">★★★★★</div>
-                                <p>"Hasilnya luar biasa!"</p>
-                                <small>- Sarah, Jakarta</small>
-                            </div>
-                        </div>
-                        <div class="guarantee-badge">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>30 Hari<br>Garansi</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Problems Section -->
-    <section id="problems" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">Identifikasi Masalah</div>
-                    <h2 class="section-title">Masalah Kulit yang Mengganggu Kepercayaan Diri?</h2>
-                    <p class="section-subtitle">Jutaan wanita Indonesia menghadapi tantangan yang sama setiap hari</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="problem-card-modern">
-                        <div class="problem-icon-modern">
-                            <i class="fas fa-sad-tear"></i>
-                        </div>
-                        <h4>Kulit Kusam & Tidak Bercahaya</h4>
-                        <p>Kulit terlihat lelah, tidak fresh, dan kehilangan kilau alami yang memukau</p>
-                        <div class="problem-stats">
-                            <span class="percentage">85%</span>
-                            <small>wanita mengalami masalah ini</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="problem-card-modern">
-                        <div class="problem-icon-modern">
-                            <i class="fas fa-exclamation-circle"></i>
-                        </div>
-                        <h4>Jerawat & Komedo Membandel</h4>
-                        <p>Breakout yang mengganggu aktivitas dan menurunkan rasa percaya diri</p>
-                        <div class="problem-stats">
-                            <span class="percentage">72%</span>
-                            <small>mengalami jerawat dewasa</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="problem-card-modern">
-                        <div class="problem-icon-modern">
-                            <i class="fas fa-circle-notch"></i>
-                        </div>
-                        <h4>Bekas Luka & Flek Hitam</h4>
-                        <p>Noda hitam dan bekas jerawat yang sulit hilang meski sudah berbagai cara</p>
-                        <div class="problem-stats">
-                            <span class="percentage">68%</span>
-                            <small>memiliki dark spot</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section id="solution" class="py-5 solution-bg">
-        <div class="container">
-            <div class="row align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <div class="solution-image-stack">
-                        <img src="https://images.unsplash.com/photo-1594824204098-7add17cd8c98?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Natural Ingredients" class="solution-main-img">
-                        <div class="ingredient-cards">
-                            <div class="ingredient-card">
-                                <i class="fas fa-leaf"></i>
-                                <span>Vitamin C</span>
-                            </div>
-                            <div class="ingredient-card">
-                                <i class="fas fa-droplet"></i>
-                                <span>Hyaluronic Acid</span>
-                            </div>
-                            <div class="ingredient-card">
-                                <i class="fas fa-seedling"></i>
-                                <span>Niacinamide</span>
-                            </div>
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-dark mb-4">
+                            Nikmati Kesegaran Alami dalam Setiap Seduhan
+                        </h1>
+                        <p class="lead text-muted mb-4">
+                            Teh organik bebas bahan kimia – sehat, segar, dan ramah lingkungan.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="https://wa.me/6281234567890?text=Halo%20GreenSip,%20saya%20ingin%20memesan%20teh%20organik" 
+                               class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg">
+                                <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang via WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="section-badge">Solusi Revolusioner</div>
-                    <h2 class="section-title">Formula Advanced untuk Kulit Sempurna</h2>
-                    <p class="section-subtitle mb-4">
-                        Menggabungkan 12 bahan aktif alami terpilih dengan teknologi nano-encapsulation 
-                        untuk penetrasi maksimal dan hasil yang terlihat nyata.
+                    <div class="hero-image text-center">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=500&h=600&fit=crop&crop=center" 
+                             alt="GreenSip Teh Organik" class="img-fluid product-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="leaf leaf-1"></div>
+            <div class="leaf leaf-2"></div>
+            <div class="leaf leaf-3"></div>
+        </div>
+    </section>
+
+    <!-- About Product Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="fw-bold text-dark mb-4">Mengapa Memilih GreenSip?</h2>
+                    <p class="lead text-muted mb-5">
+                        GreenSip adalah teh organik premium yang diolah dari daun teh pilihan terbaik. 
+                        Setiap seduhan memberikan kesegaran alami yang menyehatkan tubuh dan menenangkan pikiran.
                     </p>
-                    
-                    <div class="solution-features">
-                        <div class="feature-modern mb-4">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-microscope"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h5>Teknologi Nano-Encapsulation</h5>
-                                <p>Penetrasi 10x lebih dalam untuk hasil maksimal</p>
-                            </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-leaf text-success"></i>
                         </div>
-                        <div class="feature-modern mb-4">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h5>Teruji Dermatologis</h5>
-                                <p>Aman untuk semua jenis kulit, termasuk sensitif</p>
-                            </div>
+                        <h5 class="fw-bold">100% Organik</h5>
+                        <p class="text-muted">
+                            Ditanam tanpa pestisida dan bahan kimia berbahaya, 
+                            menjamin kemurnian dan kualitas terbaik.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-heart text-success"></i>
                         </div>
-                        <div class="feature-modern mb-4">
-                            <div class="feature-icon-modern">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h5>Hasil Cepat & Terukur</h5>
-                                <p>Perubahan terlihat dalam 3-7 hari pemakaian</p>
-                            </div>
+                        <h5 class="fw-bold">Bebas Gula</h5>
+                        <p class="text-muted">
+                            Rasa alami tanpa tambahan gula buatan, 
+                            cocok untuk diet sehat dan gaya hidup aktif.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-recycle text-success"></i>
                         </div>
+                        <h5 class="fw-bold">Ramah Lingkungan</h5>
+                        <p class="text-muted">
+                            Kemasan daur ulang dan proses produksi berkelanjutan 
+                            untuk menjaga kelestarian alam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold text-dark">Galeri Produk</h2>
+                    <p class="text-muted">Lihat keindahan dan kualitas produk GreenSip</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" 
+                             alt="Teh Organik 1" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1597318830011-3bfa0ca7e854?w=400&h=300&fit=crop" 
+                             alt="Teh Organik 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1571934811164-9d9d4fe47a46?w=400&h=300&fit=crop" 
+                             alt="Teh Organik 3" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1627220297700-4ad5af82e8c6?w=400&h=300&fit=crop" 
+                             alt="Proses Pembuatan 1" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" 
+                             alt="Proses Pembuatan 2" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1563113530-57ba4cea6608?w=400&h=300&fit=crop" 
+                             alt="Kebun Teh" class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
@@ -245,143 +192,80 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5">
+    <section id="testimonials" class="py-5 bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">Testimoni Nyata</div>
-                    <h2 class="section-title">Transformasi Luar Biasa dari Pelanggan Kami</h2>
-                    <p class="section-subtitle">Ribuan wanita telah merasakan perubahan yang mengagumkan</p>
+                    <h2 class="fw-bold text-dark">Testimoni Pelanggan</h2>
+                    <p class="text-muted">Apa kata mereka yang sudah merasakan manfaat GreenSip</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-modern">
-                        <div class="testimonial-header">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
-                                 alt="Maya" class="testimonial-avatar">
-                            <div class="testimonial-info">
-                                <h6>Maya Sari</h6>
-                                <small>Marketing Manager, Jakarta</small>
-                                <div class="stars">★★★★★</div>
-                            </div>
+                    <div class="testimonial-card p-4 bg-white rounded shadow-sm">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
                         </div>
-                        <blockquote>
-                            "Setelah 5 hari pakai, rekan kerja sudah notice kulit wajah saya glowing! 
-                            Jerawat bekas stress juga mulai mengering. Produk terbaik yang pernah saya coba!"
-                        </blockquote>
-                        <div class="testimonial-highlight">
-                            <i class="fas fa-quote-right"></i>
+                        <p class="text-muted mb-3">
+                            "Rasanya sangat segar dan alami! Setelah rutin minum GreenSip, 
+                            saya merasa lebih berenergi dan tubuh lebih sehat."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b789?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Sarah" class="rounded-circle me-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Sarah Indira</h6>
+                                <small class="text-muted">Ibu Rumah Tangga</small>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-modern featured">
-                        <div class="testimonial-header">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
-                                 alt="Sinta" class="testimonial-avatar">
-                            <div class="testimonial-info">
-                                <h6>Sinta Dewi</h6>
-                                <small>Content Creator, Bandung</small>
-                                <div class="stars">★★★★★</div>
-                            </div>
+                    <div class="testimonial-card p-4 bg-white rounded shadow-sm">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
                         </div>
-                        <blockquote>
-                            "Sebagai content creator, kulit adalah aset utama saya. GlowSkin benar-benar game changer! 
-                            Dark spot hilang, pori-pori mengecil, makeup jadi flawless."
-                        </blockquote>
-                        <div class="testimonial-highlight">
-                            <i class="fas fa-quote-right"></i>
+                        <p class="text-muted mb-3">
+                            "Kualitas tehnya benar-benar premium. Aroma dan rasanya sangat autentik. 
+                            Cocok banget untuk yang peduli kesehatan seperti saya!"
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Andi" class="rounded-circle me-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Andi Pratama</h6>
+                                <small class="text-muted">Karyawan Swasta</small>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="testimonial-modern">
-                        <div class="testimonial-header">
-                            <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
-                                 alt="Rina" class="testimonial-avatar">
-                            <div class="testimonial-info">
-                                <h6>Rina Pratiwi</h6>
-                                <small>Entrepreneur, Surabaya</small>
-                                <div class="stars">★★★★★</div>
-                            </div>
+                    <div class="testimonial-card p-4 bg-white rounded shadow-sm">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
                         </div>
-                        <blockquote>
-                            "Kulitku yang super sensitif akhirnya cocok dengan skincare! Tidak ada iritasi sama sekali, 
-                            malah kulit jadi lebih sehat dan natural glowing."
-                        </blockquote>
-                        <div class="testimonial-highlight">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Before After Section -->
-    <section id="results" class="py-5 results-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">Bukti Nyata</div>
-                    <h2 class="section-title">Transformasi Menakjubkan dalam 7 Hari</h2>
-                    <p class="section-subtitle">Lihat perubahan dramatis yang dialami pengguna kami</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="before-after-modern">
-                        <div class="comparison-slider">
-                            <div class="before-section">
-                                <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                     alt="Before" class="comparison-img">
-                                <div class="comparison-label before-label">SEBELUM</div>
-                            </div>
-                            <div class="after-section">
-                                <img src="https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                     alt="After" class="comparison-img">
-                                <div class="comparison-label after-label">SESUDAH</div>
-                            </div>
-                            <div class="slider-handle">
-                                <i class="fas fa-arrows-alt-h"></i>
-                            </div>
-                        </div>
-                        <div class="result-details">
-                            <h5>Transformasi Lisa (26)</h5>
-                            <p>Masalah: Jerawat hormonal & kulit kusam</p>
-                            <div class="improvement-tags">
-                                <span class="tag">Jerawat -90%</span>
-                                <span class="tag">Glowing +100%</span>
-                                <span class="tag">Pori mengecil</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="before-after-modern">
-                        <div class="comparison-slider">
-                            <div class="before-section">
-                                <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                     alt="Before" class="comparison-img">
-                                <div class="comparison-label before-label">SEBELUM</div>
-                            </div>
-                            <div class="after-section">
-                                <img src="https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                     alt="After" class="comparison-img">
-                                <div class="comparison-label after-label">SESUDAH</div>
-                            </div>
-                            <div class="slider-handle">
-                                <i class="fas fa-arrows-alt-h"></i>
-                            </div>
-                        </div>
-                        <div class="result-details">
-                            <h5>Transformasi Dea (29)</h5>
-                            <p>Masalah: Dark spot & bekas jerawat</p>
-                            <div class="improvement-tags">
-                                <span class="tag">Dark spot -85%</span>
-                                <span class="tag">Tekstur halus</span>
-                                <span class="tag">Cerah natural</span>
+                        <p class="text-muted mb-3">
+                            "Packaging-nya ramah lingkungan dan tehnya benar-benar organik. 
+                            Saya jadi lebih tenang karena tidak ada bahan kimia berbahaya."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" 
+                                 alt="Maya" class="rounded-circle me-3" width="50" height="50">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Maya Sari</h6>
+                                <small class="text-muted">Entrepreneur</small>
                             </div>
                         </div>
                     </div>
@@ -390,110 +274,64 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing Promo Section -->
     <section id="pricing" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">Penawaran Terbatas</div>
-                    <h2 class="section-title">Investasi Terbaik untuk Kulit Impian</h2>
-                    <p class="section-subtitle">Dapatkan harga spesial launching - hanya untuk 100 pelanggan pertama!</p>
-                </div>
-            </div>
-            
-            <!-- Countdown Timer -->
-            <div class="row mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <div class="countdown-modern" data-aos="zoom-in">
-                        <div class="countdown-header">
-                            <i class="fas fa-fire text-danger"></i>
-                            <span>Promo berakhir dalam:</span>
+                <div class="col-lg-6 mx-auto text-center" data-aos="fade-up">
+                    <div class="pricing-card p-5 bg-white rounded-3 shadow-lg">
+                        <div class="promo-badge mb-4">
+                            <span class="badge bg-danger fs-6 py-2 px-3 rounded-pill">
+                                <i class="fas fa-fire me-1"></i>PROMO TERBATAS!
+                            </span>
                         </div>
-                        <div id="countdown-timer" class="countdown-display"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center g-4">
-                <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-modern">
-                        <div class="pricing-header">
-                            <div class="package-tag starter">STARTER</div>
-                            <h4>Paket Coba</h4>
-                            <div class="pricing-main">
-                                <span class="currency">Rp</span>
-                                <span class="price">199</span>
-                                <span class="period">ribu</span>
+                        <h3 class="fw-bold text-dark mb-3">GreenSip Teh Organik</h3>
+                        <div class="pricing-info mb-4">
+                            <div class="original-price">
+                                <span class="text-decoration-line-through text-muted fs-5">Rp 75.000</span>
                             </div>
-                            <div class="original-price">Harga Normal: Rp 299.000</div>
-                            <div class="savings">Hemat 33% • Limited Time</div>
-                        </div>
-                        <div class="pricing-features">
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>1x GlowSkin Serum (30ml)</span>
+                            <div class="current-price">
+                                <span class="text-success fw-bold display-4">Rp 49.000</span>
                             </div>
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Panduan penggunaan detail</span>
-                            </div>
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Konsultasi WhatsApp gratis</span>
-                            </div>
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Garansi 30 hari uang kembali</span>
+                            <div class="savings">
+                                <span class="text-danger fw-bold">Hemat Rp 26.000!</span>
                             </div>
                         </div>
-                        <a href="https://wa.me/628123456789?text=Halo, saya ingin memesan Paket Coba GlowSkin Serum (Rp 199.000)" 
-                           class="btn btn-pricing w-100" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing-modern featured">
-                        <div class="popular-badge">
-                            <i class="fas fa-crown"></i>
-                            MOST POPULAR
-                        </div>
-                        <div class="pricing-header">
-                            <div class="package-tag premium">PREMIUM</div>
-                            <h4>Paket Transformasi</h4>
-                            <div class="pricing-main">
-                                <span class="currency">Rp</span>
-                                <span class="price">499</span>
-                                <span class="period">ribu</span>
-                            </div>
-                            <div class="original-price">Harga Normal: Rp 897.000</div>
-                            <div class="savings">Hemat 44% • Best Value</div>
-                        </div>
-                        <div class="pricing-features">
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>3x GlowSkin Serum (90ml total)</span>
-                            </div>
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Free ongkir seluruh Indonesia</span>
-                            </div>
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Konsultasi skin expert unlimited</span>
-                            </div>
-                            <div class="feature-check">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Progress tracking & tips personal</span>
-                            </div>
-                            <div class="feature-check premium-feature">
-                                <i class="fas fa-star"></i>
-                                <span>BONUS: Face mask premium (2 pcs)</span>
+                        <div class="promo-countdown mb-4">
+                            <p class="text-danger fw-bold mb-2">
+                                <i class="fas fa-clock me-1"></i>Promo berakhir dalam:
+                            </p>
+                            <div id="countdown" class="d-flex justify-content-center gap-3">
+                                <div class="countdown-item text-center">
+                                    <div class="countdown-number bg-danger text-white rounded p-2">
+                                        <span id="days">30</span>
+                                    </div>
+                                    <small>Hari</small>
+                                </div>
+                                <div class="countdown-item text-center">
+                                    <div class="countdown-number bg-danger text-white rounded p-2">
+                                        <span id="hours">23</span>
+                                    </div>
+                                    <small>Jam</small>
+                                </div>
+                                <div class="countdown-item text-center">
+                                    <div class="countdown-number bg-danger text-white rounded p-2">
+                                        <span id="minutes">59</span>
+                                    </div>
+                                    <small>Menit</small>
+                                </div>
+                                <div class="countdown-item text-center">
+                                    <div class="countdown-number bg-danger text-white rounded p-2">
+                                        <span id="seconds">59</span>
+                                    </div>
+                                    <small>Detik</small>
+                                </div>
                             </div>
                         </div>
-                        <a href="https://wa.me/628123456789?text=Halo, saya ingin memesan Paket Transformasi GlowSkin Serum (Rp 499.000)" 
-                           class="btn btn-pricing-featured w-100" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang
+                        <p class="text-muted mb-4">*Promo terbatas hingga 30 Juni 2025</p>
+                        <a href="https://wa.me/6281234567890?text=Halo%20GreenSip,%20saya%20ingin%20memesan%20teh%20organik%20dengan%20harga%20promo%20Rp%2049.000" 
+                           class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg">
+                            <i class="fab fa-whatsapp me-2"></i>Pesan Sekarang - Rp 49.000
                         </a>
                     </div>
                 </div>
@@ -501,117 +339,122 @@
         </div>
     </section>
 
-    <!-- FAQ & Contact Section -->
-    <section id="contact" class="py-5 contact-bg">
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
         <div class="container">
-            <!-- FAQ -->
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">FAQ</div>
-                    <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-                    <p class="section-subtitle">Temukan jawaban untuk semua keraguan Anda</p>
+                    <h2 class="fw-bold text-dark">FAQ Singkat</h2>
+                    <p class="text-muted">Pertanyaan yang sering ditanyakan</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto" data-aos="fade-up">
-                    <div class="faq-modern">
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                <span>Apakah GlowSkin aman untuk kulit sensitif?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div id="faq1" class="faq-answer collapse show">
-                                <p>Sangat aman! GlowSkin telah teruji dermatologi dan diformulasikan khusus untuk semua jenis kulit, termasuk kulit sensitif. Kami menggunakan bahan-bahan alami premium yang minim risiko iritasi.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                <span>Berapa lama hasil mulai terlihat?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div id="faq2" class="faq-answer collapse">
-                                <p>Hasil awal dapat terlihat dalam 3-7 hari dengan pemakaian rutin 2x sehari. Untuk transformasi optimal, gunakan konsisten selama 4-6 minggu. Setiap kulit unik, namun 95% pengguna melihat perubahan signifikan dalam minggu pertama.</p>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="fas fa-question-circle text-success me-3"></i>
+                                    Apakah ini bisa dikonsumsi anak-anak?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, GreenSip aman dikonsumsi anak-anak di atas 3 tahun. Kandungan kafeinnya rendah dan 
+                                    semua bahan 100% organik tanpa bahan kimia berbahaya. Disarankan untuk memberikan porsi 
+                                    yang lebih kecil untuk anak-anak.
+                                </div>
                             </div>
                         </div>
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                <span>Bagaimana cara penggunaan yang benar?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div id="faq3" class="faq-answer collapse">
-                                <p>Sangat mudah! Bersihkan wajah → Aplikasikan 2-3 tetes GlowSkin pada wajah → Pijat lembut hingga meresap → Lanjutkan dengan moisturizer. Gunakan pagi dan malam untuk hasil maksimal.</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                <span>Apakah ada garansi jika tidak cocok?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div id="faq4" class="faq-answer collapse">
-                                <p>Tentu! Kami percaya 100% pada kualitas produk. Jika dalam 30 hari Anda tidak puas dengan hasilnya, kami akan mengembalikan uang Anda secara penuh tanpa pertanyaan rumit.</p>
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="fas fa-shipping-fast text-success me-3"></i>
+                                    Bagaimana cara pengirimannya?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kami menggunakan jasa ekspedisi terpercaya seperti JNE, J&T, dan SiCepat. 
+                                    Pengiriman dilakukan dalam 1-2 hari kerja setelah pembayaran dikonfirmasi. 
+                                    Ongkos kirim akan disesuaikan dengan lokasi tujuan.
+                                </div>
                             </div>
                         </div>
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                <span>Bagaimana proses pemesanan dan pengiriman?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                            <div id="faq5" class="faq-answer collapse">
-                                <p>Proses super mudah! Klik tombol WhatsApp → Chat dengan tim kami → Konfirmasi pesanan → Transfer → Produk dikirim dalam 1-2 hari kerja ke seluruh Indonesia dengan packaging aman dan diskret.</p>
+                        <div class="accordion-item border-0 mb-3 rounded shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="fas fa-leaf text-success me-3"></i>
+                                    Apa saja manfaat teh organik GreenSip?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    GreenSip kaya akan antioksidan yang membantu meningkatkan imunitas tubuh, 
+                                    melancarkan metabolisme, dan memberikan efek relaksasi. Kandungan organiknya 
+                                    juga membantu detoksifikasi alami tubuh.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Contact Info -->
-            <div class="row mt-5">
-                <div class="col-lg-10 mx-auto" data-aos="fade-up">
-                    <div class="contact-modern">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h4>Masih Ada Pertanyaan?</h4>
-                                <p class="mb-4">Tim expert kami siap membantu Anda 24/7 untuk konsultasi dan informasi lebih lanjut.</p>
-                                <div class="contact-methods">
-                                    <a href="https://wa.me/628123456789?text=Halo, saya ingin konsultasi tentang GlowSkin Serum" 
-                                       class="contact-method" target="_blank">
-                                        <div class="contact-icon whatsapp">
-                                            <i class="fab fa-whatsapp"></i>
-                                        </div>
-                                        <div class="contact-details">
-                                            <h6>WhatsApp Konsultasi</h6>
-                                            <p>+62 812-3456-789</p>
-                                        </div>
-                                    </a>
-                                    <a href="mailto:hello@glowskinnaturals.com" class="contact-method">
-                                        <div class="contact-icon email">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <div class="contact-details">
-                                            <h6>Email Support</h6>
-                                            <p>hello@glowskinnaturals.com</p>
-                                        </div>
-                                    </a>
-                                </div>
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="fw-bold text-dark">Hubungi Kami</h2>
+                    <p class="text-muted">Siap melayani Anda dengan teh organik terbaik</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="contact-item d-flex align-items-center mb-4 p-3 bg-light rounded">
+                            <div class="contact-icon me-3">
+                                <i class="fab fa-whatsapp text-success fs-3"></i>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="office-info">
-                                    <h6>Kantor Pusat</h6>
-                                    <p class="mb-3">
-                                        <i class="fas fa-map-marker-alt me-2"></i>
-                                        Jl. Sudirman No. 789, Jakarta Pusat 10220
-                                    </p>
-                                    <div class="map-container-modern">
-                                        <iframe 
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666!2d106.845!3d-6.208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTInMjguOCJTIDEwNsKwNTAnNDIuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
-                                            style="border:0; border-radius: 12px;" 
-                                            allowfullscreen="" 
-                                            loading="lazy">
-                                        </iframe>
-                                    </div>
-                                </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">WhatsApp</h6>
+                                <p class="mb-0 text-muted">+62 812-3456-7890</p>
+                                <a href="https://wa.me/6281234567890" class="text-success small">Chat Langsung</a>
                             </div>
                         </div>
+                        <div class="contact-item d-flex align-items-center mb-4 p-3 bg-light rounded">
+                            <div class="contact-icon me-3">
+                                <i class="fab fa-instagram text-danger fs-3"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Instagram</h6>
+                                <p class="mb-0 text-muted">@greensip.official</p>
+                                <a href="#" class="text-danger small">Follow Us</a>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-4 p-3 bg-light rounded">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt text-primary fs-3"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-bold">Alamat Bisnis</h6>
+                                <p class="mb-0 text-muted">Jl. Organik No. 123, Bandung, Jawa Barat 40123</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-container rounded overflow-hidden shadow">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8976765727163!2d107.6097!3d-6.9034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64c8e8b0b7d%3A0x6a4d0e1c8e8b0b7d!2sBandung%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1629780000000!5m2!1sen!2sid" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -619,44 +462,41 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer-modern">
+    <footer class="py-4 bg-success text-white">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="footer-brand">
-                        <h5>✨ GlowSkin Naturals</h5>
-                        <p>Revolusi skincare alami untuk kulit impian Anda</p>
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-leaf fs-4 me-2"></i>
+                        <h5 class="mb-0 fw-bold">GreenSip</h5>
                     </div>
+                    <p class="mb-0 mt-2">Kesegaran alami dalam setiap seduhan</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="social-links-modern">
-                        <a href="#" class="social-link instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link tiktok">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a href="#" class="social-link youtube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fs-5"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp fs-5"></i></a>
                     </div>
-                    <p class="copyright">© 2024 GlowSkin Naturals. All rights reserved.</p>
+                    <p class="mb-0 mt-2">&copy; 2024 GreenSip. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <div class="whatsapp-floating">
-        <a href="https://wa.me/628123456789?text=Halo, saya tertarik dengan GlowSkin Serum" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-            <span class="wa-text">Chat Sekarang</span>
-        </a>
-    </div>
+    <a href="https://wa.me/6281234567890?text=Halo%20GreenSip,%20saya%20ingin%20bertanya%20tentang%20produk" 
+       class="whatsapp-float" title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-    <!-- Scripts -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
